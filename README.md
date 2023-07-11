@@ -1,5 +1,4 @@
-# NOTICE  
-This was a fork from https://github.com/markubiak/wallpaper-reddit - I have updated the Mac OS section to be compatible with the latest versions. I will also be expanding Linux documentation. 
+# REDDIT API is closed NO LONGER WORKS!
 
 ## How-To Guide located with @ https://christitus.com/change-wallpaper/
 
