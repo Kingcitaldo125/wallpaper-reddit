@@ -18,7 +18,7 @@ def download_image(url, title):
         img = Image.open(f).convert('RGB')
         if config.resize:
             config.log("resizing the downloaded wallpaper")
-            img = ImageOps.fit(img, (config.minwidth, config.minheight), Image.ANTIALIAS)
+            img = ImageOps.fit(img, (config.minwidth, config.minheight), Image.LANCZOS)
         if config.settitle:
             img = set_image_title(img, title)
         if config.opsys == "Windows":
