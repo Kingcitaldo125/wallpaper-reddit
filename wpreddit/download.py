@@ -77,4 +77,4 @@ def save_info(link):
 # out - string - title without any annoying tags
 # removes the [tags] throughout the image
 def remove_tags(str):
-    return re.sub(' +', ' ', re.sub("[\[\(\<].*?[\]\)\>]", "", str)).strip()
+    return re.sub(' +', ' ', re.sub("[\\[\\(\\<].*?[\\]\\)\\>]", "", str)).strip()

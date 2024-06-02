@@ -54,7 +54,7 @@ def choose_valid(links):
         link = origlink[0]
         config.log("checking link # {0}: {1}".format(i, link))
         if not (link[-4:] == '.png' or link[-4:] == '.jpg' or link[-5:] == '.jpeg'):
-            if re.search('(imgur\.com)(?!/a/)', link):
+            if re.search('(imgur[.]com)(?!/a/)', link):
                 link = link.replace("/gallery", "")
                 link += ".jpg"
             else:

@@ -42,7 +42,7 @@ def linux_wallpaper():
             # If the filename isn't changed, the wallpaper doesn't either
             files = os.listdir(config.walldir)
             for file in files:
-                if re.search('wallpaper[0-9]+\.jpg', file) is not None:
+                if re.search('wallpaper[0-9]+[.]jpg', file) is not None:
                     os.remove(config.walldir + "/" + file)
             randint = random.randint(0, 65535)
             randpath = os.path.expanduser(config.walldir + "/wallpaper%s.jpg" % randint)
